@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* CSS HEX / Color pallete
+--gunmetal: #232931ff;
+--butterscotch: #ed9b40ff;
+--antiflash-white: #eeeeeeff;
+--indian-red: #e15b64ff;
+--fawn: #f8b26aff; */
 html {
   box-sizing: border-box;
 }
@@ -6,5 +13,33 @@ body {
   margin: 0;
   /* Viewport height, stretch the background full height of the screen  */
   min-height: 100vh;
-  background-color: blueviolet;
+  font-family: "Press Start 2P", sans-serif;
+  color: #eeeeee;
+  background-color: #232931;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.loader img {
+  /* stay in where it is, even if user is scrolling */
+  position: fixed;
+  /*  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
