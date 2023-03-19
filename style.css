@@ -43,3 +43,24 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Image Container */
+.image-container {
+  /* 30% margine from left and 30% from right, so we have 40% image in total */
+  margin: 10px 25%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 7px;
+}
+
+/* Media query: large Smartphone */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 12px;
+  }
+  .image-container {
+    margin: 10px 5%;
+  }
+}
